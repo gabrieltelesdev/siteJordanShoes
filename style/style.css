@@ -1,0 +1,223 @@
+/*Variáveis*/
+:root {
+    --bgSite: #f6f6f6;
+    --bgCard: #ebe9ea;
+
+    --white: #f9f9f9;
+
+    --title: #181818;
+    --text: #474747;
+}
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button,
+input {
+    border: 0;
+}
+
+button:focus,
+input:focus {
+    border: 0;
+}
+
+.container {
+    width: 1440px;
+    margin: auto;
+}
+
+.freteDesconto {
+    font-size: 16px;
+    color: var(--white);
+    padding: 15px;
+    background-color: var(--title);
+    display: flex;
+    justify-content: center;
+}
+
+.nomeLoja {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.nomeLoja h1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--title);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 378px;
+    background: url(../images/jordanBg.jpeg) no-repeat center center / cover;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.texto {
+    width: 500px;
+    margin-left: 10%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+}
+
+.texto p {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 196.19%;
+}
+
+.texto h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.destaques {
+    background-color: var(--bgSite);
+    padding: 0 20px 60px 20px;
+}
+
+.introducaoDestaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+    padding: 60px 10px;
+}
+
+.introducaoDestaque h1 {
+    color: var(--title);
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.introducaoDestaque p {
+    color: var(--text);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.tenisCards {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.bgCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgCard);
+    padding: 76px 25px;
+    margin: 0 13px 40px 13px;
+    flex: 1 1 250px;
+}
+
+footer {
+    background-color: var(--title);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: var(--white);
+    padding: 13px 10px;
+    font-size: 18px;
+    font-weight: 500px;
+}
+
+/*Media Queries*/
+
+@media (max-width: 500px) {
+    .texto {
+        margin: 0;
+    }
+    
+    .texto h1 {
+        font-size: 28px;
+    }
+
+    .texto p {
+        font-size: 16px;
+    }
+
+    .destaques {
+        padding: 0 20px 0 20px;
+    }
+
+    .introducaoDestaque {
+        text-align: center;
+    }
+
+    .introducaoDestaque h1 {
+        font-size: 28px;
+    }
+
+    .introducaoDestaque p {
+        font-size: 16px;
+    }
+
+    .bgCard {
+        margin: 0 0 40px 0;
+    }
+}
